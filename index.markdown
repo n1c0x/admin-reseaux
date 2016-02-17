@@ -1,5 +1,7 @@
 <head><link rel="stylesheet" type="text/css" href="style.css"></head>
 
+<!-- https://www.juniper.net/techpubs/en_US/junos15.1/topics/task/configuration/root-password.html -->
+
 # Configuration de Routeur Juniper
 
 ## Introduction
@@ -31,6 +33,10 @@ La configuration du mot de passe root s'effectue comme suit:
 	root@# set root-authentication plain-text-password
 	New Password: taper le mot de passe
 	Retype new password: confirmer le mot de passe
+
+Il est également possible de n'autoriser qu'un accès root via le port console (aucun autre utilisateur ne sera autorisé à se connecter via le port console):
+
+	root@# set services ssh root-login deny
 
 
 ## Bibliographie

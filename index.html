@@ -1015,6 +1015,8 @@ body .markdown-body
   }
 }
 </style><title>index</title></head><body><article class="markdown-body"><p><head><link rel="stylesheet" type="text/css" href="style.css"></head></p>
+<!-- https://www.juniper.net/techpubs/en_US/junos15.1/topics/task/configuration/root-password.html -->
+
 <h1 id="configuration-de-routeur-juniper"><a name="user-content-configuration-de-routeur-juniper" href="#configuration-de-routeur-juniper" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Configuration de Routeur Juniper</h1>
 <h2 id="introduction"><a name="user-content-introduction" href="#introduction" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Introduction</h2>
 <p>Juniper est le deuxième constructeur mondial de matériel réseau. Il représente une part de marché d&rsquo;environ 15% [1]. Juniper conçoit et vend du matériel réseau comme des routeurs, des switchs, des passerelles de sécurité (VPN, pare-feu) ainsi que du support pour ses produits [2].</p>
@@ -1039,8 +1041,11 @@ A l&rsquo;invite de commande, il suffit de taper la commande <code>cli</code> et
 </ul>
 <p>La configuration du mot de passe root s&rsquo;effectue comme suit: </p>
 <pre><code>root@# set root-authentication plain-text-password
-New Password: type password here
-Retype new password: retype password here
+New Password: taper le mot de passe
+Retype new password: confirmer le mot de passe
+</code></pre>
+<p>Il est également possible de n&rsquo;autoriser qu&rsquo;un accès root via le port console (aucun autre utilisateur ne sera autorisé à se connecter via le port console):</p>
+<pre><code>root@# set services ssh root-login deny
 </code></pre>
 <h2 id="bibliographie"><a name="user-content-bibliographie" href="#bibliographie" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bibliographie</h2>
 <p>1: <a href="http://www.forbes.com/sites/greatspeculations/2015/09/10/how-can-juniper-curb-the-declines-in-its-router-market-share/#790ad1a07278">http://www.forbes.com/sites/greatspeculations/2015/09/10/how-can-juniper-curb-the-declines-in-its-router-market-share/#790ad1a07278</a><br />
