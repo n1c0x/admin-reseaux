@@ -1030,11 +1030,18 @@ body .markdown-body
 <p>Ensuite seulement, l&rsquo;équipement peut être mis en route. Lorsqu&rsquo;il est démarré, un premier identifiant est demandé. Celui-ci est <code>root</code> et ne requiert pas de mot de passe.<br />
 A l&rsquo;invite de commande, il suffit de taper la commande <code>cli</code> et d&rsquo;appuyer sur la touche <code>Enter</code> pour accéder au mode opérationnel de ligne de commande (CLI operational mode). L&rsquo;invite de commande passe alors de <code>root@#</code> à <code>cli</code></p>
 <h2 id="configuration-de-base"><a name="user-content-configuration-de-base" href="#configuration-de-base" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Configuration de base</h2>
-<p>Pour rentrer dans le mode de configuration de l&rsquo;équipement, il faut taper la commande <code>configure</code>. Un mot de passe root doit être configuré afin de protéger l&rsquo;accès à l&rsquo;équipement. Celui-ci doit respecter plusieurs conditions:</p>
+<p>Pour rentrer dans le mode de configuration de l&rsquo;équipement, il faut taper la commande <code>configure</code>. </p>
+<h3 id="mot-de-passe-root"><a name="user-content-mot-de-passe-root" href="#mot-de-passe-root" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Mot de passe root</h3>
+<p>Un mot de passe root doit être configuré afin de protéger l&rsquo;accès à l&rsquo;équipement. Celui-ci doit respecter plusieurs conditions:</p>
 <ul>
 <li>Il doit être long de six caractères au minimum. La plupart des classes de caractères peut être utilisée: alphabétiques, numérique et caractères spéciaux.</li>
 <li>Il doit contenir au moins un changement de casse de caractère (majucsule et minuscule) ou de classe de caractère.</li>
 </ul>
+<p>La configuration du mot de passe root s&rsquo;effectue comme suit: </p>
+<pre><code>root@# set root-authentication plain-text-password
+New Password: type password here
+Retype new password: retype password here
+</code></pre>
 <h2 id="bibliographie"><a name="user-content-bibliographie" href="#bibliographie" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Bibliographie</h2>
 <p>1: <a href="http://www.forbes.com/sites/greatspeculations/2015/09/10/how-can-juniper-curb-the-declines-in-its-router-market-share/#790ad1a07278">http://www.forbes.com/sites/greatspeculations/2015/09/10/how-can-juniper-curb-the-declines-in-its-router-market-share/#790ad1a07278</a><br />
 2: <a href="http://www.trefis.com/stock/jnpr/model/trefis?easyAccessToken=PROVIDER_b980e77d38293d7ed41f15fc5b26fb649f476b68">http://www.trefis.com/stock/jnpr/model/trefis?easyAccessToken=PROVIDER_b980e77d38293d7ed41f15fc5b26fb649f476b68</a></p></article></body></html>

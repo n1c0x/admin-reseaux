@@ -18,11 +18,19 @@ Ensuite seulement, l'équipement peut être mis en route. Lorsqu'il est démarr�
 A l'invite de commande, il suffit de taper la commande `cli` et d'appuyer sur la touche `Enter` pour accéder au mode opérationnel de ligne de commande (CLI operational mode). L'invite de commande passe alors de `root@#` à `cli`
 
 ## Configuration de base
-Pour rentrer dans le mode de configuration de l'équipement, il faut taper la commande `configure`. Un mot de passe root doit être configuré afin de protéger l'accès à l'équipement. Celui-ci doit respecter plusieurs conditions:
+Pour rentrer dans le mode de configuration de l'équipement, il faut taper la commande `configure`. 
+
+### Mot de passe root
+Un mot de passe root doit être configuré afin de protéger l'accès à l'équipement. Celui-ci doit respecter plusieurs conditions:
 
 * Il doit être long de six caractères au minimum. La plupart des classes de caractères peut être utilisée: alphabétiques, numérique et caractères spéciaux.
 * Il doit contenir au moins un changement de casse de caractère (majucsule et minuscule) ou de classe de caractère.
 
+La configuration du mot de passe root s'effectue comme suit: 
+	
+	root@# set root-authentication plain-text-password
+	New Password: taper le mot de passe
+	Retype new password: confirmer le mot de passe
 
 
 ## Bibliographie
