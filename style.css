@@ -1,6 +1,7 @@
 /*
 * Add at the beginning of the markdown file:
 * <head><link rel="stylesheet" type="text/css" href="style.css"></head>
+* How to use: Add <span class="the-class-you-want-to-use"></span>
 */
 body{
 	width: 55em;
