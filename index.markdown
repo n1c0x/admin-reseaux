@@ -10,6 +10,16 @@ une part de marché d'environ 15% [1]. Juniper conçoit et vend du matériel ré
 comme des routeurs, des switchs, des passerelles de sécurité (VPN, pare-feu)
 ainsi que du support pour ses produits [2].
 
+## JunOS
+Les routeurs Juniper utilisent un système d'exploitation basé sur FreeBSD appelé
+JunOS. Ce système d'exploitation est mis à jour tous les 90 jours et utilise la
+même codebase depuis 1998.
+
+JunOS diffère des IOS utilisées par les équipements Cisco : le système
+d'exploitation Cisco sert juste à charger l'image IOS qui va gérer les
+fonctionnalitées du routeur. JunOS est directement présent sur l'équipement.
+Cela facilite l'inter-opérabilité entre les équipements Juniper.
+
 ## Connexion
 Pour accéder à la console de l'équipement réseau, il faut tout d'abord se
 connecter au port série de celui-ci en utilisant un programme adapté comme
