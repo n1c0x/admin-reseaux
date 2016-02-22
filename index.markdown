@@ -26,7 +26,7 @@ Pour rentrer dans le mode de configuration de l'équipement, il faut taper la co
 Un mot de passe root doit être configuré afin de protéger l'accès à l'équipement. Celui-ci doit respecter plusieurs conditions:
 
 * Il doit être long de six caractères au minimum. La plupart des classes de caractères peut être utilisée: alphabétiques, numérique et caractères spéciaux.
-* Il doit contenir au moins un changement de casse de caractère (majucsule et minuscule) ou de classe de caractère.
+* Il doit contenir au moins un changement de casse de caractère (majuscule et minuscule) ou de classe de caractère.
 
 La configuration du mot de passe root s'effectue comme suit: 
 	
@@ -38,6 +38,8 @@ Il est également possible de n'autoriser qu'un accès root via le port console 
 
 	root@# set services ssh root-login deny
 
+### Hostname
+Le hostname est une chaîne de caractères qui permet d'identifier l'équipement  de manière unique sur le réseau.
 
 ## Bibliographie
 1: http://www.forbes.com/sites/greatspeculations/2015/09/10/how-can-juniper-curb-the-declines-in-its-router-market-share/#790ad1a07278
