@@ -1,4 +1,4 @@
-<head><link rel="stylesheet" type="text/css" href="style.css"></head>
+<head><link rel="stylesheet" type="text/css" href="./style.css"></head>
 
 <!-- https://www.juniper.net/techpubs/en_US/junos15.1/topics/task/configuration/root-password.html -->
 
